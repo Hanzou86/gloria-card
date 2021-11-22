@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("b-day.jpg");
+  background-color: rgba(0, 204, 255, 0.25);
+  background-blend-mode: overlay;
+  padding: 2em;
+  height: 100vh;
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.card {
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+  transition: -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.front {
+  -webkit-transition: -webkit-transform 3s ease-in-out;
+  transition: -webkit-transform 3s ease-in-out;
+  transition: transform 3s ease-in-out;
+  transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  padding: 1.5em;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(cupcakes.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.back {
+  padding: 1em;
+  background-color: #ffcc66;
+}
+
+.back p {
+  font-family: 'Berkshire Swash', 'serif';
+  font-size: 1.5em;
+  color: white;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.5) translateX(200px);
+          transform: scale(1.5) translateX(200px);
+}
+
+.card:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card-bdr {
+  width: 100%;
+  height: 100%;
+  border: 0.7em solid #ffcc66;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+}
+
+.card-bdr h2 {
+  margin-bottom: 1em;
+  font-family: 'Berkshire Swash', 'serif';
+  font-size: 5em;
+  font-weight: 200;
+  text-align: center;
+  color: #ffcc66;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+}
+
+.card-bdr hr {
+  width: 80%;
+  margin-top: 1em;
+  border: 2px solid #ffcc66;
+}
+
+.baloon {
+  width: 2em;
+  height: 2em;
+  border-radius: 50% 50% 0 50%;
+  color: #ffcc66;
+}
+/*# sourceMappingURL=style.css.map */
