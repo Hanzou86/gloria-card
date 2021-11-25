@@ -1,0 +1,31 @@
+// Mixins ===========================
+
+@mixin flex(
+    $disp: flex,
+    $dir: null,
+    $wrap: null,
+    $just: null,
+    $align: null) {
+        display: $disp;
+        flex-direction: $dir;
+        flex-wrap: $wrap;
+        justify-content: $just;
+        align-items: $align;    
+    }
+
+
+@mixin three-dim (
+    $per: null, 
+    $trm-style: null, 
+    $trn: null) {
+        perspective: $per;
+        transform-style: $trm-style;
+        transition: $trn;
+    }
+
+// Color Variables ===========================
+
+$overlay: hsla(192, 100%, 50%, .25);
+$prime: hsl(192, 100%, 50%);
+$second: hsl(40, 100%, 70%);
+$third: hsl(264, 100%, 50%);
