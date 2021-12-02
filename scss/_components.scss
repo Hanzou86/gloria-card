@@ -1,5 +1,5 @@
 .card {
-    @include perspective;
+    @include three-dim;
     width: 400px;
     height: 600px;
     position: relative;
@@ -19,12 +19,12 @@
 }
 
 .front {
-    @include perspective;
+    @include three-dim;
     padding: 1.5em;
     transform-origin: 0 50%;
     z-index: 100;
     background-color:rgba(0,0,0,.3);
-    background-image: url(cupcakes.jpg);
+    background-image: url('../cupcakes.jpg');
     background-blend-mode: overlay;
     background-size: cover;
 }

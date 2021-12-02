@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url("../b-day.jpg");
+  background-color: rgba(0, 204, 255, 0.25);
+  background-blend-mode: overlay;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.front {
+  padding: 1.5em;
+  transform-origin: 0 50%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../cupcakes.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.back {
+  padding: 1em;
+  background-color: #ffcc66;
+}
+.back p {
+  font-family: "Berkshire Swash", "serif";
+  font-size: 1.5em;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.5) translateX(200px);
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card-bdr {
+  width: 100%;
+  height: 100%;
+  border: 0.7em solid #ffcc66;
+  transform: translateZ(25px);
+}
+.card-bdr h2 {
+  margin-bottom: 1em;
+  font-family: "Berkshire Swash", "serif";
+  font-size: 5em;
+  font-weight: 200;
+  text-align: center;
+  color: #ffcc66;
+  transform: translateZ(25px);
+}
+.card-bdr hr {
+  width: 80%;
+  margin-top: 1em;
+  border: 2px solid #ffcc66;
+}
+
+.baloon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.7;
+  transition: transform 2s cubic-bezier(0.59, -0.46, 0.52, 1.56);
+}
+
+.baloon:hover {
+  transform: translateY(-15em);
+}
+
+.one {
+  top: 2em;
+  left: 2em;
+  background-color: #00ccff;
+}
+
+.two {
+  top: 5em;
+  left: 7em;
+  background-color: #ffcc66;
+}
+
+.three {
+  top: 14em;
+  left: 4em;
+  background-color: #6600ff;
+}
+
+/*# sourceMappingURL=main.css.map */

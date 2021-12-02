@@ -3,10 +3,10 @@
 }
 
 body {
-    @include flex($disp, $just: center, $align: center);
+    @include flex($disp:flex, $just: center, $align: center);
     height: 100vh;
     position: relative;
-    background-image: url('b-day.jpg');
+    background-image: url('../b-day.jpg');
     background-color: $overlay;
     background-blend-mode: overlay;
 }
