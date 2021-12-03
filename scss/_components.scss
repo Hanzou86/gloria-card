@@ -1,9 +1,8 @@
 .card {
-    @include three-dim;
+    @include three-dim($per: 800px, $trm-style: preserve-3d, $trn: transform 2s ease-in-out);
     width: 400px;
     height: 600px;
     position: relative;
-
 }
 
 .front,
@@ -19,7 +18,7 @@
 }
 
 .front {
-    @include three-dim;
+    @include three-dim($per: 800px, $trm-style: preserve-3d, $trn: transform 2s ease-in-out);
     padding: 1.5em;
     transform-origin: 0 50%;
     z-index: 100;
